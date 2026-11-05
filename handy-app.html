@@ -16,34 +16,39 @@ a{color:var(--ac)}
 </head>
 <body>
 <main>
-<h1>Datenschutzerkl&#228;rung – Saybook Philipp</h1>
-<p>Stand: 04.11.2026</p>
+<h1>Datenschutzerkl&#228;rung &#8211; Saybook Philipp</h1>
+<p>Stand: 05.11.2026 (ersetzt die Fassung vom 04.11.2026)</p>
 <p><strong>Verantwortlicher:</strong> Philipp Tekautz, &#214;sterreich, E-Mail: <a href="mailto:saybookapp@gmail.com">saybookapp@gmail.com</a></p>
 <h2>Kurzfassung</h2>
-<p>„Saybook Philipp“ ist ein Zugang zu deinem <strong>eigenen</strong> Google-Apps-Script-Dashboard: Die App zeigt die Seite deines Scripts an und schickt gesprochene Notizen an dein Script. <strong>Ich (der Anbieter der App) erhalte keine Daten von dir.</strong> Es gibt kein Konto bei mir, keine Werbung und kein Tracking. Deine Daten liegen in deinem eigenen Google-Konto (Google Sheet), nicht bei mir.</p>
+<p>&#8222;Saybook Philipp&#8220; speichert alle deine Eingaben <strong>nur auf deinem Ger&#228;t</strong>, in einer lokalen Datenbank. <strong>Ich (der Anbieter der App) erhalte keine Daten von dir.</strong> Es gibt kein Konto bei mir, keine Werbung und kein Tracking. Ins Internet geht nur, was du selbst einschaltest: (1) S&#228;tze, die die App nicht sicher einordnen kann, werden mit <strong>deinem eigenen Gemini-Schl&#252;ssel</strong> an den KI-Dienst von Google (Gemini) geschickt, und (2) auf Wunsch einmalig der Import aus deinem <strong>eigenen</strong> Google-Apps-Script/Google Sheet.</p>
 <h2>Welche Daten verarbeitet die App?</h2>
 <ul>
-<li><strong>Adresse und Schl&#252;ssel deines Scripts:</strong> tr&#228;gst du beim ersten Start selbst ein. Sie werden nur im gesch&#252;tzten App-Speicher deines Ger&#228;ts abgelegt und ausschlie&#223;lich an die Adresse deines eigenen Scripts (script.google.com) geschickt. Fremde Adressen nimmt die App nicht an.</li>
-<li><strong>Inhalte deines Dashboards:</strong> Todos, Einkaufsliste, Buchungen, Ideen, Personen, Geburtstage, Tagebuch, gemerkte Orte, Aufnahmen und &#196;hnliches, was du in deinem Script f&#252;hrst. Sie werden von deinem Script geliefert und in der App angezeigt.</li>
-<li><strong>Widget-Zwischenspeicher:</strong> F&#252;r das Widget merkt sich die App den letzten Auszug (z. B. heutige Todos, Geburtstage, Ideen, Anzahl der Einkaufsliste, Ausgaben im Monat) im gesch&#252;tzten App-Speicher, damit das Widget ohne Netz etwas anzeigt.</li>
-<li><strong>Gesprochene Notizen:</strong> Was du &#252;ber das Widget sprichst, wird als Text an dein Script gesendet, dort sortiert und in deinem Google Sheet gespeichert. Ob und welche KI-Dienste dein Script daf&#252;r nutzt (z. B. von Anthropic oder Google), richtest du in deinem Script selbst ein; darauf hat die App keinen Einfluss.</li>
+<li><strong>Deine Eintr&#228;ge:</strong> Todos, Einkaufslisten, Buchungen, Ideen, Gewohnheiten, Tagebucheintr&#228;ge, Personen (Namen, Notizen, Gruppen, Verkn&#252;pfungen zwischen Personen), Geburtstage, gemerkte Orte von Dingen und &#196;hnliches. Sie liegen in einer lokalen Datenbank im gesch&#252;tzten App-Speicher deines Ger&#228;ts und werden nicht an mich &#252;bertragen.</li>
+<li><strong>Gemini-Schl&#252;ssel (optional):</strong> Tr&#228;gst du unter &#8222;+&#8220; &#8594; &#8222;KI&#8220; einen Schl&#252;ssel ein, wird er nur im gesch&#252;tzten App-Speicher abgelegt und ausschlie&#223;lich an den Gemini-Dienst von Google gesendet. Du kannst ihn jederzeit in der App entfernen.</li>
+<li><strong>Protokoll:</strong> F&#252;r die Fehlersuche f&#252;hrt die App ein Protokoll mit den zuletzt eingegebenen S&#228;tzen, deren Sortierung und Fehlermeldungen (z. B. der KI). Es liegt nur im gesch&#252;tzten App-Speicher, ist auf eine kleine Gr&#246;&#223;e begrenzt und nicht in der Sicherungsdatei enthalten. Es verl&#228;sst dein Ger&#228;t nur, wenn du in der App &#8222;Teilen&#8220; w&#228;hlst. Unter &#8222;+&#8220; &#8594; &#8222;Protokoll&#8220; kannst du es l&#246;schen.</li>
 </ul>
+<h2>KI &#252;ber Gemini (nur mit deinem Schl&#252;ssel)</h2>
+<p>Die App ordnet gesprochene oder getippte S&#228;tze zuerst mit festen Regeln auf deinem Ger&#228;t ein. Nur wenn die Regeln unsicher sind <strong>und</strong> du einen Gemini-Schl&#252;ssel eingetragen und die KI eingeschaltet hast, wird <strong>der einzelne Satz</strong> an die Gemini-Schnittstelle von Google (generativelanguage.googleapis.com) gesendet, um Art und Text des Eintrags zu bestimmen. Es werden keine anderen Eintr&#228;ge, Fotos oder Kontakte mitgeschickt. Ohne Schl&#252;ssel oder bei ausgeschalteter KI verl&#228;sst kein Satz dein Ger&#228;t. F&#252;r diese Verarbeitung gelten die Bedingungen und die Datenschutzhinweise von Google f&#252;r die Gemini-API und f&#252;r deinen Schl&#252;ssel (je nach Tarif darf Google Eingaben nach seinen Bedingungen auch zur Verbesserung seiner Produkte verwenden; bitte dort nachlesen). Ich habe darauf keinen Zugriff.</p>
+<h2>Import aus deinem Google Sheet (einmalig, auf Wunsch)</h2>
+<p>Unter &#8222;+&#8220; &#8594; &#8222;Import aus Sheet&#8220; kannst du die Eintr&#228;ge aus deinem eigenen Google-Apps-Script &#252;bernehmen. Daf&#252;r gibst du Adresse (script.google.com) und Schl&#252;ssel deines Scripts ein. Die App ruft damit einmalig deine Daten ab und schreibt sie in die lokale Datenbank. Adresse und Schl&#252;ssel werden <strong>nicht gespeichert</strong>. Fremde Adressen nimmt die App nicht an. F&#252;r das Hosting deines Scripts und deines Google-Kontos gelten die Bedingungen von Google.</p>
 <h2>Berechtigungen und wof&#252;r sie dienen</h2>
 <ul>
-<li><strong>Internet:</strong> um das Dashboard zu laden und Notizen an dein Script zu senden.</li>
-<li><strong>Mikrofon:</strong> nur f&#252;r die Spracheingabe, wenn du den Mikrofon-Knopf im Widget antippst.</li>
-<li><strong>Fotos:</strong> W&#228;hlst du im Dashboard ein Foto zum Hochladen, benutzt die App die Auswahl deines Ger&#228;ts. Das Foto geht an dein Script. Die App greift nicht auf deine &#252;brige Fotosammlung zu.</li>
+<li><strong>Internet:</strong> nur f&#252;r die KI (Gemini) und den einmaligen Import, siehe oben.</li>
+<li><strong>Kalender (lesen und schreiben):</strong> nur, damit Termine und Geburtstage auf deinen Wunsch in den Kalender deines Ger&#228;ts eingetragen, ge&#228;ndert oder gel&#246;scht werden und keine Doppelten entstehen. Welchen Kalender das Ger&#228;t synchronisiert (z. B. Google), bestimmt das Ger&#228;t. Die Abfrage erscheint erst, wenn du zum ersten Mal einen Kalendereintrag m&#246;chtest.</li>
+<li><strong>Mikrofon:</strong> nur f&#252;r die Spracheingabe, wenn du &#8222;Sprechen&#8220; antippst oder das Widget benutzt.</li>
+<li><strong>Benachrichtigungen und exakte Alarme:</strong> f&#252;r Erinnerungen zu Todos und Geburtstagen zur gew&#228;hlten Uhrzeit; nach einem Neustart werden sie neu geplant.</li>
+<li><strong>Fotos/Kamera:</strong> Fotos w&#228;hlst du &#252;ber die Auswahl deines Ger&#228;ts oder nimmst sie mit der Kamera-App auf; sie werden in den App-Speicher kopiert. Die App greift nicht auf deine &#252;brige Fotosammlung zu.</li>
 </ul>
+<h2>Widget</h2>
+<p>Das Widget auf dem Startbildschirm zeigt einen Auszug deiner Eintr&#228;ge (z. B. heutige Todos, Geburtstage, Einkauf, Ideen). Wer deinen Startbildschirm sieht, sieht diesen Auszug. Du kannst das Widget jederzeit entfernen oder den Umfang in der App einstellen.</p>
 <h2>Spracherkennung</h2>
 <p>Die Umwandlung von Sprache in Text &#252;bernimmt eine Komponente deines Ger&#228;ts (z. B. Google oder Samsung). Die App verlangt die Erkennung auf dem Ger&#228;t, wenn m&#246;glich. Ob ein Sprachpaket installiert ist und die Erkennung offline arbeitet oder das Ger&#228;t daf&#252;r das Netz nutzt, entscheidet dein Ger&#228;t und dessen Anbieter. F&#252;r diese Verarbeitung gelten deren Datenschutzbestimmungen.</p>
-<h2>Dashboard-Seite und Google</h2>
-<p>Die angezeigte Seite wird von Google Apps Script geliefert (script.google.com). F&#252;r diese Verarbeitung (Hosting deines Scripts, deines Google Sheets und deines Google-Kontos) gelten die Bedingungen von Google. Die App selbst setzt keine Tracking- oder Werbe-Dienste ein.</p>
 <h2>Weitergabe von Daten</h2>
-<p>Durch mich gibt es keine Weitergabe, weil ich keine Daten erhalte. Teilst du selbst etwas (z. B. eine Einkaufsliste per WhatsApp), entscheidest du das und die jeweilige App verarbeitet den Text nach ihren Bedingungen.</p>
+<p>Durch mich gibt es keine Weitergabe, weil ich keine Daten erhalte. Teilst du selbst etwas (z. B. eine Einkaufsliste per WhatsApp oder das Protokoll per E-Mail), entscheidest du das und die jeweilige App verarbeitet den Text nach ihren Bedingungen.</p>
 <h2>Speicherdauer und L&#246;schung</h2>
-<p>Adresse, Schl&#252;ssel und Widget-Zwischenspeicher bleiben im App-Speicher, bis du sie in den Einstellungen &#228;nderst oder die App deinstallierst. Beim Deinstallieren werden sie vom Ger&#228;t entfernt. Die Inhalte in deinem Google Sheet l&#246;schst und verwaltest du selbst in deinem Google-Konto. Die automatische Android-Datensicherung ist f&#252;r die App abgeschaltet.</p>
+<p>Die Daten bleiben, bis du sie in der App l&#246;schst oder die App deinstallierst; dabei werden alle App-Daten einschlie&#223;lich Schl&#252;ssel vom Ger&#228;t entfernt. Du kannst in der App eine Sicherungsdatei (ZIP mit allen Eintr&#228;gen und Fotos) speichern und daraus wiederherstellen; wohin du die Datei legst, entscheidest du allein. Die Datei ist nicht verschl&#252;sselt. Ohne eigene Sicherung sind die Eintr&#228;ge weg, wenn Ger&#228;t oder App-Daten verloren gehen. Die automatische Android-Datensicherung ist f&#252;r die App abgeschaltet.</p>
 <h2>Deine Rechte</h2>
-<p>Da ich keine Daten von dir erhalte, kann ich keine Auskunft &#252;ber sie geben; du hast die volle Kontrolle in deinem Google-Konto und auf deinem Ger&#228;t. Bei Fragen erreichst du mich unter <a href="mailto:saybookapp@gmail.com">saybookapp@gmail.com</a>. Beschwerden kannst du an die &#246;sterreichische Datenschutzbeh&#246;rde (dsb.gv.at) richten.</p>
+<p>Da ich keine Daten von dir erhalte, kann ich keine Auskunft &#252;ber sie geben; du hast die volle Kontrolle auf deinem Ger&#228;t und in deinem Google-Konto. Bei Fragen erreichst du mich unter <a href="mailto:saybookapp@gmail.com">saybookapp@gmail.com</a>. Beschwerden kannst du an die &#246;sterreichische Datenschutzbeh&#246;rde (dsb.gv.at) richten.</p>
 <h2>Kinder</h2>
 <p>Die App richtet sich an Erwachsene und nicht an Kinder.</p>
 <h2>&#196;nderungen</h2>
